@@ -49,7 +49,11 @@ public class Me {
         this.collection[ i ] = null;
       }
     } 
-    // System.out.println( Arrays.toString( this.collection ) );
+    for( Game item : this.collection ) {
+      if( item != null ) {
+      System.out.println( item.getName() );
+      }
+    }
   }
 
 }
